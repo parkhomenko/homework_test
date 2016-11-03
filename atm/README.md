@@ -1,11 +1,14 @@
-1. ATM
-2. Person (User)
-3. Card
-4. Account
-5. Security
-6. Transaction History
-7. Bill
-8. Money
+Objects:
+- ATM
+- Person (User)
+- Card
+- Account
+- Security
+- Transaction History
+- Bill
+- Money
+
+=====================================================
 
 1. PERSON inserts a CARD into the ATM
 
