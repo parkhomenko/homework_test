@@ -1,0 +1,95 @@
+Objects:
+
+- ATM;
+- PERSON (user);
+- Card;
+- Account;
+- Security;
+- Transaction History;
+- Bill;
+- Money;
+- Camera;
+- Bank;
+
+
+1) PERSON inserts a CARD into the ATM;
+
+
+2) ATM (SECURITY) validates the CARD:
+ - is CARD correctrly inserted;
+ 
+ - accepts that TYPE of the CARD;
+ 
+ - Check CARD in Bank database;
+   - If card was lost or stolen turn CAMERA on and make photo;
+   - Compare photo from ATM with photo of user in Bank database;
+    - If photos are different or if coincidence of photos is less than 80& - call 911;
+
+3) ATM asks to choose language;
+
+
+4) ATM asks to enter a pincode:
+ - checks correctness of pincode;
+  - if pincode has been entered wrongly 3 times - block card using for 5 minutes;
+	- if pincode has been entered wrongly 3 times more turn CAMERA on and make photo;
+	 - If photos are different or if coincidence of photos is less than 80& - call 911;
+	 
+ - if was entered safety pincode turn CAMERA on and make photo and call 911; 	
+ 
+ - card is not expired;
+ 
+ - check currency of ACCOUNT;
+
+ 
+5) PERSON chooses a function:
+ - check ACCOUNT;
+  - show on the screen current status of balance;
+  - ATM asks to print BILL with balance of the CARD;
+  
+ - money transfer to another ACCOUNT;
+  - enter ACCOUNT number;
+  - check number of ACCOUNT in bank database;
+   - if number is incorrect show message;
+  - ATM asks to enter amount;
+   - ATM checks balance of CARD;
+    - if balance not enough for transaction print message;
+  - ATM asks to confirm transaction by entering of pincode;
+  - ATM sends information to bank;
+   - bank subtract transfered amount from USER balance;
+   - bank adds record to TRANSACTION HISTORY;
+   - bank add transfered amount to account of another USER;
+  - ATM asks USER for bill printing;
+  
+ - get money from ATM;
+  - ATM asks to enter amount;
+   - ATM checks balance of CARD;
+    - if balance not enough for transaction print message;
+  - ATM asks to choose denomination of banknotes;
+  - ATM asks to confirm transaction by entering of pincode; 
+  - ATM sends information to bank;
+   - bank subtract transfered amount from USER balance;
+   - bank adds record to TRANSACTION HISTORY;
+  - ATM asks USER for bill printing; 
+ 
+ - change language;
+  - ATM asks to choose language from list of available languages;
+   - ATM changes language of shown text on the screen;
+ 
+6)  ATM asks to end session:
+ - if USER chooses to continue session;
+  - ATM shows list of functions;
+  
+ - if USER chooses to end session;
+  - ATM returns CARD back to the USER; 
+ 
+
+
+
+
+
+
+
+
+
+
+ 
