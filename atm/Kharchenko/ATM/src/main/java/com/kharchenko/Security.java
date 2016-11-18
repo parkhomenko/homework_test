@@ -20,7 +20,6 @@ public class Security {
     }
 
     public boolean checkingIsBlocked(int cardNumber) {
-        if (blockedCards.contains(cardNumber)) return true;
-        return false;
+        return (blockedCards.contains(cardNumber));
     }
 }
